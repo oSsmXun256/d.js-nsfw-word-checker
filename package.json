@@ -1,0 +1,18 @@
+{
+  "name": "D.js NSFW Checker",
+  "version": "14",
+  "description": "NSFW word check bot.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.11.0",
+    "kuroshiro": "~1.1.2",
+    "kuroshiro-analyzer-kuromoji": "^1.1.0"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "license": "Apache"
+}
