@@ -42,20 +42,20 @@ client.on('ready', () => {
   console.log(`${client.user.tag} Version.${ver}`)
   console.log(`Discord.js@v14`)
   console.log(`+ = = = = = = = = = = = = = = = = = = +`);
-  client.user.setPresence({ activities: [{ name: `Powered by ossmxun.net | Ver.${ver}`, type: ActivityType.Watching }],
+  client.user.setPresence({ activities: [{ name: `Powered by ossmxun.net`, type: ActivityType.Playing }],
   status: 'online'});
 });
-  
+
 let status_status = 0;
 client.on('ready', () => {
   setInterval( async () => {
     if(status_status === 0) {
-      client.user.setPresence({ activities: [{ name: `下ネタを監視中`, type: ActivityType.Watching}],
+      client.user.setPresence({ activities: [{ name:"あ", state: "...破廉恥！", type: ActivityType.Custom}],
       status: 'online'});
 
       status_status = 1;
     } else if(status_status === 1) {
-      client.user.setPresence({ activities: [{ name: `Powered by ossmxun.net | Ver.${ver}`, type: ActivityType.Watching }],
+      client.user.setPresence({ activities: [{ name: `Powered by ossmxun.net`, type: ActivityType.Playing }],
       status: 'online'});
   
       status_status = 0;
